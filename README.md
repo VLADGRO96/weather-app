@@ -19,8 +19,7 @@ The Weather App is a simple, user-friendly web application designed to provide c
 - **JavaScript**: For handling interactions and dynamic content updates.
 - **Weather API**: To fetch current weather data.
 
-## Installation
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/vladgro96/weather-app.git
+## Usage
+- Enter the name of a city in the search bar and press enter.
+- The application will display the current weather, including temperature, humidity, and weather conditions for the specified location.
 
