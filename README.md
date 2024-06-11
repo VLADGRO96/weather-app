@@ -2,7 +2,6 @@
 
 <a  target="_blank" href="https://vladgro96.github.io/weather-app/" >Link for Prewiev</a>
 
-# Weather App
 
 ## Overview
 The Weather App is a simple, user-friendly web application designed to provide current weather information for any location around the world. This project leverages modern web technologies and APIs to deliver real-time weather data with an intuitive and attractive interface.
