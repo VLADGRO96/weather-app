@@ -1,0 +1,163 @@
+@import './reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+body {
+	font-family: 'Inter', system-ui, sans-serif;
+	background-color: #101720;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 10vh 0 30vh;
+	color: #fff;
+}
+
+.none {
+	display: none !important;
+}
+/* Main Container */
+
+.weather {
+	width: 370px;
+	padding: 30px 20px;
+	border-radius: 16px;
+	background: linear-gradient(154deg, #91511e, #7ab077, #33addd, #529cc5, #c6db38);
+	background-size: 400% 400%;
+	animation: gradient-animation 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+/* Form */
+
+.form {
+	height: 40px;
+	display: flex;
+	align-items: stretch;
+	background-color: #fff;
+	border-radius: 60px;
+	box-shadow: 20px 20px 60px #000,
+}
+
+.form__input {
+	flex-grow: 1;
+	padding: 0 10px 0 20px;
+	color: #101720;
+	
+}
+
+.form__input::placeholder {
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.form__btn {
+	padding: 0 10px;
+}
+
+/* Weather Info */
+
+.weather__info {
+	padding-top: 10px;
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+.weather__img {
+	width: 128px;
+}
+
+.weather__temp {
+	font-size: 56px;
+	font-weight: 700;
+}
+
+
+.weather__city {
+	font-size: 38px;
+	font-weight: 500;
+}
+
+/* Weather Details */
+
+.weather__details {
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.details {
+	display: grid;
+	grid-template-columns: 36px auto;
+	grid-template-rows: auto auto;
+	column-gap: 10px;
+}
+
+.details__img {
+	width: 36px;
+	grid-row: 1 / 3;
+	align-self: center;
+}
+
+.details__value {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.details__title {
+	font-size: 20px;
+	font-weight: 300;
+}
+
+/* Media Queries */
+
+@media (max-width: 480px) {
+	.weather {
+		width: 90%;
+		padding: 20px 10px;
+	}
+
+	.weather__img {
+		width: 100px;
+	}
+
+	.weather__temp {
+		font-size: 48px;
+	}
+
+	.weather__city {
+		font-size: 32px;
+	}
+
+	.weather__details {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.details {
+		grid-template-columns: 24px auto;
+		column-gap: 8px;
+	}
+
+	.details__img {
+		width: 24px;
+	}
+
+	.details__value,
+	.details__title {
+		font-size: 16px;
+	}
+}
